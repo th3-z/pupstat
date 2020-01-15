@@ -1,11 +1,11 @@
 #! /usr/bin/env python3
 
+# WARNING: This script is called by root
 # Configuration
 # TODO: move to /etc/
 SERVICES = {
     "vanilluxe": 25567,
     "nginx": 80,
-    "deadtest": 69,
 }
 PATH = "/var/lib/service-stat"
 
