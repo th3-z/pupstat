@@ -13,5 +13,8 @@ build: setuid.c
 	chown root:root pupstat
 	chmod u=rwx,go=xr,+s pupstat
 
-.PHONY: install uninstall all
+clean:
+	rm -f pupstat
+
+.PHONY: install uninstall all clean
 
