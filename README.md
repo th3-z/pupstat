@@ -7,7 +7,7 @@ Outputs json with percentage uptime, and current state.
 
 ## Installation
 
-First follow the configuration instructions, then run `make build && make 
+First follow the configuration instructions, then run `make && sudo make 
 install`.
 
 ### Configuration

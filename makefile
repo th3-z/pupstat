@@ -1,8 +1,8 @@
 all: build
 
 install:
-	install pupstat /usr/bin
-	install pupstat.py /usr/bin
+	install -o root -g root -m u=rwx,go=xr,+s pupstat /usr/bin
+	install -o root -g root pupstat.py /usr/bin
 
 uninstall:
 	rm -f /usr/bin/pupstat
@@ -10,8 +10,6 @@ uninstall:
 
 build: setuid.c
 	gcc setuid.c -o pupstat
-	chown root:root pupstat
-	chmod u=rwx,go=xr,+s pupstat
 
 clean:
 	rm -f pupstat
